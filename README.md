@@ -1,32 +1,52 @@
-## users テーブル
+# アプリケーション名　
+　trainer
+ 
+ # アプリケーション概要
+ 日々のトレーニング内容、摂取カロリーを記録し体型管理ツールとして使用できる。
+ 
+ # URL
+ 順次記述
+ 
+ # テスト用アカウント
+ 順次記述
+ 
+ # 利用方法
+ トレーニング内容投稿
+ 
+ 1.トップページのヘッダーからユーザー新規登録を行う　2.トレーニング内容投稿ボタンから、トレーニング内容を入力し投稿する。
 
-| Column              | Type     | Options                   |
-| ------------------- | -------- | ------------------------- |
-| nickname            | string   | null: false               |
-| email               | string   | null: false, unique: true |
-| encrypted_password  | string   | null: false               |
-| body_weight         | integer  | null: false               |
-| height              | integer  | null: false               |
+ 摂取カロリー投稿
+ 
+ 1.トップページのヘッダーからユーザー新規登録を行う　2.摂取カロリー量投稿ボタンから、摂取カロリー量を入力し投稿する。
 
-- has_many :tranings
-- has_many :calories
+ # アプリケーションを作成した背景
+ トレーニング内容や食事内容などをそれぞれ記録するアプリは多いが体型管理にはどちらも大事な要素のため、一緒にそれぞれの内容を記録できるアプリがあれば便利であると考え、アプリを作成した。
+
+ # 洗い出した要件
+ https://docs.google.com/spreadsheets/d/1wtMGO-5KYLXHLuEM36I0Bt1tMGBCrvR5XbZVvll9F_w/edit#gid=982722306
+
+ # 実装した機能についての画像やGIFおよびその説明
+ 順次記述
+
+ # 実装予定の機能
+ 未定
+
+ # データベース設計
+ ![design](https://github.com/yuuya210618/trainer/assets/128597594/30c94142-5c26-4205-a380-1cec80f8c9d2)
+
+ # 画面遷移図
+![page](https://github.com/yuuya210618/trainer/assets/128597594/7450369f-11cb-4a52-8945-b7d9f49afe0f)
+
+ 
+ # 開発環境
+ ・フロントエンド
+ ・バックエンド
+ ・テキストエディタ
+ 
+ # ローカルでの動作方法
+順次記述
+ 
+ # 工夫したポイント
+ 順次記述
 
 
-## trainings テーブル
-
-| Column             | Type       | Options                        |
-| ------------------ | ---------- | ------------------------------ |
-| user               | references | null: false, foreign_key: true |
-| training_name      | string     | null: false                    |
-| weight             | integer    | null: false                    |
-| number             | integer    | null: false                    | 
-
-- belongs_to :user
-
-## calories テーブル
-| Column          | Type       |Options                         |
-| --------------- | ---------- |------------------------------- |
-| user            | references | null: false, foreign_key: true |
-| calories_intake | integer    | null: false                    |
-
-- belongs_to :user
