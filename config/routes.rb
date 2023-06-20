@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
   devise_for :users
   root to: 'trainings#index'
-  resources :training
+  get '/training/new', to: 'trainings#new'
+
+  resources :trainings
+
 end

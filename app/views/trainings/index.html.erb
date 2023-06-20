@@ -1,4 +1,7 @@
-<div>
+
+<%= link_to "トレーニング記録をつける", new_training_path %>
+
+<div class = main>
 <%= month_calendar events: @trainings do |date,trainings| %>
   <%= date.day %>
 
