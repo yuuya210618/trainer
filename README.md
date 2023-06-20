@@ -1,24 +1,54 @@
-# README
+# アプリケーション名　
+　trainer
+ 
+ # アプリケーション概要
+ 日々のトレーニング内容、摂取カロリーを記録し体型管理ツールとして使用できる。
+ 
+ # URL
+ 順次記述
+ 
+ # テスト用アカウント
+ 順次記述
+ 
+ # 利用方法
+ トレーニング内容投稿
+ 1.トップページのヘッダーからユーザー新規登録を行う
+ 2.トレーニング内容投稿ボタンから、トレーニング内容を入力し投稿する。
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+ 摂取カロリー投稿
+　　1.トップページのヘッダーからユーザー新規登録を行う
+ 2.摂取カロリー量投稿ボタンから、摂取カロリー量を入力し投稿する。
 
-Things you may want to cover:
+ # アプリケーションを作成した背景
+ トレーニング内容や食事内容などをそれぞれ記録するアプリは多いが
+　　体型管理にはどちらも大事な要素のため、一緒にそれぞれの内容を記録できるアプリが
+　　あれば便利であると考え、アプリを作成した。
 
-* Ruby version
+ # 洗い出した要件
+ https://docs.google.com/spreadsheets/d/1wtMGO-5KYLXHLuEM36I0Bt1tMGBCrvR5XbZVvll9F_w/edit#gid=982722306
 
-* System dependencies
+ # 実装した機能についての画像やGIFおよびその説明
+ ~画像やGIF、説明を記載~
 
-* Configuration
+ #　実装予定の機能
+ 未定
 
-* Database creation
+ # データベース設計
+ ![design](https://github.com/yuuya210618/trainer/assets/128597594/30c94142-5c26-4205-a380-1cec80f8c9d2)
 
-* Database initialization
+ # 画面遷移図
+![page](https://github.com/yuuya210618/trainer/assets/128597594/7450369f-11cb-4a52-8945-b7d9f49afe0f)
 
-* How to run the test suite
+ 
+ # 開発環境
+ ・フロントエンド
+ ・バックエンド
+ ・テキストエディタ
+ 
+ # ローカルでの動作方法
+順次記述
+ 
+ # 工夫したポイント
+ 順次記述
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+ 
