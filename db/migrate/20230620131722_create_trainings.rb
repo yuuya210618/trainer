@@ -5,6 +5,7 @@ class CreateTrainings < ActiveRecord::Migration[6.0]
       t.string     :training_name,      null: false
       t.integer    :weight,             null: false
       t.integer    :number,             null: false
+      t.datetime   :start_time
       t.timestamps
     end
   end

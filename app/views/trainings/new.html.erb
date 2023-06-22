@@ -22,6 +22,12 @@
        重量</div>
       <%= f.text_field :number, class:"number", id:"numeber", placeholder:"回数" ,rows:"7" ,maxlength:"1000" %>
       </div>
+      <div class="time">
+      <div class="new_time">
+      <span class="indispensable">*必須*</span>
+      重量</div>
+     <%= f.datetime_select :start_time, class:"time", id:"time" %>
+     </div>
 
       <div class="submit">
        <%= f.submit "記録する" ,class:"log-btn" %>

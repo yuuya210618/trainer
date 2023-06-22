@@ -5,6 +5,7 @@ class Training < ApplicationRecord
     validates :training_name
     validates :weight
     validates :number
+    validates :start_time
   end
 
 end

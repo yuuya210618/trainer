@@ -3,10 +3,10 @@
 <%= link_to "トレーニング記録をつける", new_training_path %>
 
 <div class = main>
-<%= month_calendar events: @trainings do |date,trainings| %>
+<%= month_calendar events: @trainings do |date, trainings| %>
   <%= date.day %>
 
-  <% trainings.each do |trainings| %>
+  <% trainings.each do |training| %>
     <div>
       <%= link_to training.training_name, training %>
     </div>

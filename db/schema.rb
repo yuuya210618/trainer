@@ -17,6 +17,7 @@ ActiveRecord::Schema.define(version: 2023_06_20_131722) do
     t.string "training_name", null: false
     t.integer "weight", null: false
     t.integer "number", null: false
+    t.datetime "start_time"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["user_id"], name: "index_trainings_on_user_id"
