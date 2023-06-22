@@ -1,0 +1,27 @@
+<%= render "shared/header" %>
+
+<div class="show">
+<p>
+  <strong>トレーニング内容</strong>
+  <%= @training .training_name %>
+</p>
+
+<p>
+  <strong>重量</strong>
+  <%= @training.weight %>
+</p>
+
+<p>
+  <strong>回数</strong>
+  <%= @training.number %>
+</p>
+
+<p>
+  <strong>日付</strong>
+  <%= @training.start_time.strftime("%m-%d") %>
+</p>
+
+<%= link_to '編集', edit_training_path(@training) %>
+<%= link_to '消去',training_path(@training.id), method: :delete, data: { confirm: '本当に?' } %>
+<%= link_to '戻る', trainings_path %>
+</div>

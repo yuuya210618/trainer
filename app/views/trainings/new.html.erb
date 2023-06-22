@@ -1,0 +1,38 @@
+<%= render "shared/header" %>
+
+<div class="trainings-main">
+    <h2 class="trainings-title">トレーニング内容を記載</h2>
+    <%= form_with(model: @training, local: true) do |f| %>
+
+    <div class="new-training">
+      <div class="new_training_name">
+      <span class="indispensable">＊必須＊</span>
+        トレーニング名</div>
+      <%= f.text_area :training_name, class:"training_name", id:"training-name", placeholder:"トレーニング名（必須 40文字まで)", maxlength:"40" %>
+      </div>
+      <div class="new_weight">
+        <div class="weight_name">
+        <span class="indispensable">*必須*</span>
+        重量</div>
+        <%= f.text_field :weight, class:"weight", id:"weight", placeholder:"重量" ,rows:"7" ,maxlength:"1000" %>
+      </div>
+      <div class="new_number">
+       <div class="number_count">
+       <span class="indispensable">*必須*</span>
+       重量</div>
+      <%= f.text_field :number, class:"number", id:"numeber", placeholder:"回数" ,rows:"7" ,maxlength:"1000" %>
+      </div>
+      <div class="time">
+      <div class="new_time">
+      <span class="indispensable">*必須*</span>
+      重量</div>
+     <%= f.datetime_select :start_time, class:"time", id:"time" %>
+     </div>
+
+      <div class="submit">
+       <%= f.submit "記録する" ,class:"log-btn" %>
+       <%= link_to "もどる", root_path, class:"back-btn" %>
+      </div>
+    <% end %>
+    </div>
+    
