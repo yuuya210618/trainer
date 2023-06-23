@@ -1,1 +1,31 @@
 <%= render "shared/header" %>
+
+<%= form_with(model: @training, local: true) do |f| %>
+
+  <div class="trainings">
+    <div class="training_name">トレーニング内容</div>
+    <%= f.text_area :training_name %>
+  </div>
+
+
+  <div class="trainings">
+    <div class="weight">重量</div>
+    <%= f.text_field :weight %>
+  </div>
+
+    <div class="trainings">
+    <div class="number">回数</div>
+    <%= f.text_field :number %>
+  </div>
+
+  <div class="trainings">
+    <div class="times">時間</div>
+    <%= f.datetime_select :start_time %>
+  </div>
+
+
+  <div class="submit">
+    <%= f.submit %>
+  </div>
+
+<% end %>
