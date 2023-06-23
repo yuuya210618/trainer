@@ -4,5 +4,6 @@ Rails.application.routes.draw do
   get '/training/new', to: 'trainings#new'
 
   resources :trainings
+  resources :calories
 
 end
