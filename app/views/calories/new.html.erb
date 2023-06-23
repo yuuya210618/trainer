@@ -1,1 +1,28 @@
 <%= render "shared/header" %>
+
+<div class="calory-main">
+    <h2 class="calory_content">接種カロリー量を記載</h2>
+    <%= form_with(model: @calory, local: true) do |f| %>
+
+    <div class="new-calory">
+      <div class="new_calories_intake">
+      <span class="indispensable">＊必須＊</span>
+        摂取カロリー量</div>
+      <%= f.text_field :calories_intake, class:"calories_intake", id:"calories_intake" %>
+      </div>
+      
+      <div class="time">
+      <div class="new_time">
+      <span class="indispensable">*必須*</span>
+      重量</div>
+     <%= f.datetime_select :start_time, class:"time", id:"time" %>
+     </div>
+     
+
+      <div class="submit">
+       <%= f.submit "記録する" ,class:"log-btn" %>
+       <%= link_to "もどる", root_path, class:"back-btn" %>
+      </div>
+    <% end %>
+    </div>
+    

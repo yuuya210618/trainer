@@ -15,6 +15,7 @@ ActiveRecord::Schema.define(version: 2023_06_23_123037) do
   create_table "calories", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.bigint "user_id", null: false
     t.integer "calories_intake", null: false
+    t.datetime "start_time"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["user_id"], name: "index_calories_on_user_id"

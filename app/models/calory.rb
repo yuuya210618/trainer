@@ -1,5 +1,7 @@
 class Calory < ApplicationRecord
   belongs_to :user
-
-  validates :calories_intake, presence: true
+  with_options presence: true do
+  validates :calories_intake
+  validates :start_time
+end
 end
