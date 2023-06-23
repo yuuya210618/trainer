@@ -40,7 +40,7 @@ class CaloriesController < ApplicationController
   private
 
   def calory_parameter
-    params.require(:calory).permit(:calories_intake).merge(user_id: current_user.id)
+    params.require(:calory).permit(:calories_intake, :start_time).merge(user_id: current_user.id)
   end
 
 end
