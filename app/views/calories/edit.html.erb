@@ -1,0 +1,19 @@
+<%= render "shared/header" %>
+
+<%= form_with(model: @calory, local: true) do |f| %>
+
+  <div class="calories">
+    <div class="training_name">摂取カロリー量</div>
+    <%= f.text_field :calories_intake %>
+  </div>
+
+  <div class="calories">
+    <div class="times">時間</div>
+    <%= f.datetime_select :start_time %>
+  </div>
+
+  <div class="submit">
+    <%= f.submit %>
+  </div>
+
+<% end %>

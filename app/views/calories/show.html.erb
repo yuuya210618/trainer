@@ -1,0 +1,17 @@
+<%= render "shared/header" %>
+
+<div class="show">
+<p>
+  <strong>摂取カロリー量</strong>
+  <%= @calory.calories_intake %>
+</p>
+
+<p>
+  <strong>日付</strong>
+  <%= @calory.start_time.strftime("%m-%d") %>
+</p>
+
+<%= link_to '編集', edit_calory_path(@calory) %>
+<%= link_to '消去', calory_path(@calory.id), method: :delete, data: { confirm: '本当に?' } %>
+<%= link_to '戻る', root_path %>
+</div>

@@ -31,7 +31,7 @@ class CaloriesController < ApplicationController
   def update
     @calory = Calory.find(params[:id])
     if @calory.update(calory_parameter)
-      redirect_to calories_path
+      redirect_to root_path
     else
       render 'edit'
     end
