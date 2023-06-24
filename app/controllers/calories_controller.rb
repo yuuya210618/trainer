@@ -15,13 +15,13 @@ class CaloriesController < ApplicationController
 
   def create
     Calory.create(calory_parameter)
-    redirect_to calories_path
+    redirect_to root_path
   end
 
   def destroy
     @calory = Calory.find(params[:id])
     @calory.destroy
-    redirect_to calories_path
+    redirect_to root_path
   end
 
   def edit

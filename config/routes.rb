@@ -5,5 +5,6 @@ Rails.application.routes.draw do
 
   resources :trainings
   resources :calories
+  resources :users
 
 end

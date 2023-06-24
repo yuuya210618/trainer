@@ -4,15 +4,23 @@
 <%= link_to "摂取カロリー記録をつける", new_calory_path %>
 
 <div class="main">
-  <%= month_calendar events: @trainings do |date, trainings| %>
+  <%= month_calendar(events: @trainings, calories: @calories) do |date, trainings, calories| %>
     <%= date.day %>
 
     <% trainings.each do |training| %>
       <div>
         <%= link_to training.training_name, training %>
       </div>
+      <% end %>
 
-  <% end %>
+      <% if calories %>
+      <% calories.each do |calory| %>
+        <div>
+          <%= link_to calory.calories_intake, calory %>
+        </div>
+        <% end %>
+        <% end %>
+
 <% end %>
 </div>
 </div>
