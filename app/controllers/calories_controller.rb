@@ -14,8 +14,12 @@ class CaloriesController < ApplicationController
   end
 
   def create
-    Calory.create(calory_parameter)
-    redirect_to root_path
+    @calory= Calory.new(calory_parameter)
+    if @calory.save
+      redirect_to root_path
+    else
+      render :new
+    end
   end
 
   def destroy
