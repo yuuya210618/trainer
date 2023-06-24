@@ -10,5 +10,6 @@ class User < ApplicationRecord
     validates :height
   end
 
-  has_many :trainings
+  has_many :trainings, dependent: :destroy
+  has_many :calories, dependent: :destroy
 end
