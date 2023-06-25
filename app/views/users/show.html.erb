@@ -37,7 +37,35 @@
           </tr>
         </tbody>
       </table>
-     
+
+      <script>
+      function calc() {
+        let weight = document.getElementById("weight").value;
+        let height = document.getElementById("height").value;
+        let num = weight/( (height/100)*(height/100) );
+        let bmi = Math.ceil(num) ;
+        
+        if (bmi < 18.5) {
+                document.getElementById("yase").textContent = "痩せ";
+            } else if (bmi >= 25) {
+                document.getElementById("himan").textContent = "肥満";
+            } else if (bmi >= 18.6 && bmi < 25) {
+                document.getElementById("hyojyun").textContent = "標準";
+            }
+
+       document.getElementById("bmi").textContent = bmi;
+          }
+      </script>
+
+      <body>
+      <p>BMIを計算する</p>
+      <div>体重<input type="number" id="weight" value="" >kg</div> 
+      <div>身長 <input type="number" id="height" value="" >cm</div> 
+      <div><button type="button" onclick="calc()">計算する</button></div> 
+      <div>あなたのBMIは</span><span id="bmi"></span><span>です</span>
+      <p><span>判定→</span><span id="yase"><span id="himan"><span id="hyojyun"></span></p>
+      </body>
+    
       <%= link_to '編集', edit_user_registration_path(@user) %> 
       <%= link_to '戻る', root_path %>
 
