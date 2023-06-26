@@ -1,6 +1,5 @@
 class CaloriesController < ApplicationController
   before_action :authenticate_user!
-  before_action :move_to_index, except: [:index, :show]
 
   def index
     @calories = Calory.all
