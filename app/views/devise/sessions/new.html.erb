@@ -6,7 +6,7 @@
     <%= form_with model: @user, url: user_session_path, id: 'new_user', class: 'new_user', local: true do |f| %>
       
       <%= render 'shared/error_messages', model: f.object %>
-      
+
       <div class="field">
         <%= f.label :email %><br />
         <%= f.email_field :email, autofocus: true %>
@@ -29,4 +29,5 @@
       </div>
     <% end %>
   </div>
+  <%= link_to '戻る', root_path %>
 </div>
