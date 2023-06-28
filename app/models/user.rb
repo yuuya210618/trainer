@@ -6,8 +6,8 @@ class User < ApplicationRecord
 
   with_options presence: true do
     validates :nickname
-    validates :body_weight
-    validates :height
+    validates :body_weight, numericality: { only_integer: true, greater_than_or_equal_to: 1, less_than_or_equal_to: 300 }
+    validates :height, numericality: { only_integer: true, greater_than_or_equal_to: 1, less_than_or_equal_to: 300 }
   end
 
   has_many :trainings, dependent: :destroy

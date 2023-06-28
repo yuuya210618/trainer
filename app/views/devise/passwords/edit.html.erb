@@ -4,6 +4,8 @@
   <%= render "devise/shared/error_messages", resource: resource %>
   <%= f.hidden_field :reset_password_token %>
 
+  <%= render 'shared/error_messages', model: f.object %>
+
   <div class="field">
     <%= f.label :password, "New password" %><br />
     <% if @minimum_password_length %>

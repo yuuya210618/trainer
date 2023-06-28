@@ -5,6 +5,8 @@
     <h2 class="trainings-title">トレーニング内容を記載</h2>
     <%= form_with(model: @training, local: true) do |f| %>
 
+      <%= render 'shared/error_messages', model: f.object %>
+
     <div class="new-training">
       <div class="new_training_name">
       <span class="indispensable">＊必須＊</span>

@@ -3,6 +3,8 @@
 
 <%= form_with(model: @training, local: true) do |f| %>
 
+  <%= render 'shared/error_messages', model: f.object %>
+
   <div class="trainings">
     <div class="training_name">トレーニング内容</div>
     <%= f.text_area :training_name %>
