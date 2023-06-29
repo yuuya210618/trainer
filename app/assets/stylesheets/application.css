@@ -14,3 +14,9 @@
  *= require_self
  *= require simple_calendar
  */
+
+ .title {
+  text-align: center;
+  background-color: black;
+  color: white
+ }
