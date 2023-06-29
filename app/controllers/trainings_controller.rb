@@ -1,13 +1,13 @@
 class TrainingsController < ApplicationController
   before_action :authenticate_user!, except: [:index, :show]
   before_action :move_to_index, except: [:index, :show]
-  
+
   def index
     @trainings = Training.all
     @training = Training.new
     @calories = Calory.all
   end
-  
+
   def new
     @training = Training.new
   end
@@ -21,14 +21,14 @@ class TrainingsController < ApplicationController
     if @training.save
       redirect_to root_path
     else
-      render:new
+      render :new
     end
   end
 
   def destroy
     @training = Training.find(params[:id])
     @training.destroy
-    redirect_to trainings_path, notice:"削除しました"
+    redirect_to trainings_path, notice: '削除しました'
   end
 
   def edit
@@ -38,7 +38,7 @@ class TrainingsController < ApplicationController
   def update
     @training = Training.find(params[:id])
     if @training.update(training_parameter)
-      redirect_to trainings_path, notice: "編集しました"
+      redirect_to trainings_path, notice: '編集しました'
     else
       render 'edit'
     end
@@ -51,10 +51,8 @@ class TrainingsController < ApplicationController
   end
 
   def move_to_index
-    unless user_signed_in?
-      redirect_to action: :index
-    end
-  end
+    return if user_signed_in?
 
+    redirect_to action: :index
+  end
 end
-  
