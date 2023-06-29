@@ -1,9 +1,10 @@
 <%= render "shared/first_header" %>
 <%= render "shared/header" %>
-<%= render 'shared/error_messages', model: f.object %>
+
 
 <%= form_with(model: @calory, local: true) do |f| %>
-
+  <%= render 'shared/error_messages', model: f.object %>
+  
   <div class="calories">
     <div class="training_name">摂取カロリー量</div>
     <%= f.text_field :calories_intake %>
