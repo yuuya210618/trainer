@@ -7,26 +7,5 @@
 
 <div class="main">
   <%= month_calendar(events: @trainings, calories: @calories) do |date, trainings, calories| %>
-    <%= date.day %>
-
-<div>
-      <strong>トレーニング記録:</strong>
-      <% trainings.each do |training| %>
-        <div>
-          <%= link_to training.training_name, training %>
-        </div>
-      <% end %>
-</div>
-
-
-<div>
-      <strong>摂取カロリー記録:</strong>
-      <% calories.each do |calory| %>
-          <div>
-            <%= link_to calory.calories_intake, calory %>
-          </div>
-        <% end %>
-    </div>
-
 <% end %>
 </div>

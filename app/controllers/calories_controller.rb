@@ -6,7 +6,7 @@ class CaloriesController < ApplicationController
     @calories = Calory.all
     @calory = Calory.new
   end
-  
+
   def new
     @calory = Calory.new
   end
@@ -16,7 +16,7 @@ class CaloriesController < ApplicationController
   end
 
   def create
-    @calory= Calory.new(calory_parameter)
+    @calory = Calory.new(calory_parameter)
     if @calory.save
       redirect_to root_path
     else
@@ -49,12 +49,9 @@ class CaloriesController < ApplicationController
     params.require(:calory).permit(:calories_intake, :start_time).merge(user_id: current_user.id)
   end
 
-
   def move_to_index
-    unless user_signed_in?
-      redirect_to action: :index
-    end
+    return if user_signed_in?
+
+    redirect_to action: :index
   end
-
 end
-
