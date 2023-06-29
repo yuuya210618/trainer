@@ -13,23 +13,25 @@
         トレーニング名</div>
       <%= f.text_area :training_name, class:"training_name", id:"training-name", placeholder:"トレーニング名（必須 40文字まで)", maxlength:"40" %>
       </div>
+
+      
       <div class="new_weight">
         <div class="weight_name">
         <span class="indispensable">*必須*</span>
         重量</div>
         <%= f.text_field :weight, class:"weight", id:"weight", placeholder:"重量" ,rows:"7" ,maxlength:"1000" %>
       </div>
-      <div class="new_number">
-       <div class="number_count">
-       <span class="indispensable">*必須*</span>
-       回数</div>
-      <%= f.text_field :number, class:"number", id:"numeber", placeholder:"回数" ,rows:"7" ,maxlength:"1000" %>
+      
+      <div class="mb-3">
+     <label for="exampleFormControlInput1" class="form-label">*必須* 回数</label>
+      <%= f.text_field :number, class: "form-control", id: "exampleFormControlInput1", placeholder:"回数" ,rows:"7" ,maxlength:"1000" %>
       </div>
-      <div class="time">
-      <div class="new_time">
-      <span class="indispensable">*必須*</span>
-      </div>
-     <%= f.datetime_select :start_time, class:"time", id:"time" %>
+
+      <div class="mb-3">
+      <label for="exampleFormControlInput1" class="form-label">*必須* 日付</label>
+      <div>
+     <%= f.datetime_select :start_time, class: "form-control", id: "exampleFormControlInput1" %>
+     </div>
      </div>
 
       <div class="submit">
