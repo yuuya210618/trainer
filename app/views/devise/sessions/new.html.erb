@@ -8,12 +8,12 @@
       <%= render 'shared/error_messages', model: f.object %>
 
       <div class="mb-3">
-      <label for="exampleFormControlInput1" class="form-label">Email address</label><br />
+      <label for="exampleFormControlInput1" class="form-label">メールアドレス</label><br />
         <%= f.email_field :email, autofocus: true, class: "form-control", id: "exampleFormControlInput1", placeholder: "name@example.com" %>
       </div>
 
       <div class="mb-3">
-      <label for="exampleFormControlInput1" class="form-label">Password</label><br />
+      <label for="exampleFormControlInput1" class="form-label">パスワード</label><br />
       <%= f.password_field :password, autocomplete: "off", class: "form-control", id: "exampleFormControlInput1" %>
       </div>
 
@@ -26,7 +26,6 @@
       <% end -%>
 
       <div class="d-grid gap-2">
-
         <%= f.submit "ログイン", class: "btn btn-primary" %>
         <%= link_to '戻る', root_path, class: "btn btn-primary" %>
       </div>
