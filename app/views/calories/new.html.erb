@@ -19,10 +19,12 @@
      </div>
      </div>
      
-      <div class="submit">
-       <%= f.submit "記録する" ,class:"log-btn" %>
-       <%= link_to "もどる", root_path, class:"back-btn" %>
-      </div>
-    <% end %>
-    </div>
+     <div class="d-grid gap-2">
+     <%= f.submit "記録する", class: "btn btn-primary" %>
+     <%= link_to '戻る', root_path, class: "btn btn-primary" %>
+   </div>
+ <% end %>
+</div>
+
+
     
