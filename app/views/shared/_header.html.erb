@@ -1,12 +1,26 @@
-<div class='nav'>
 
-     <ul class='lists-right'>
+
      <% if user_signed_in? %>
-      <li><%= link_to current_user.nickname, user_path(current_user), class: "user-nickname" %></li>
-      <li><%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "logout" %></li> 
+     <nav class="navbar navbar-light bg-light">
+     <div class="container-fluid">
+      <%= link_to current_user.nickname, user_path(current_user), class: "navbar-brand" %>
+      </div>
+    </nav>
+    <nav class="navbar navbar-light bg-light">
+    <div class="container-fluid">
+      <%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "navbar-brand" %> 
+      </div>
+      </nav>
     <% else %>
-      <li><%= link_to 'ログイン', new_user_session_path, class: "login" %></li>
-      <li><%= link_to '新規登録', new_user_registration_path, class: "sign-up" %></li>
-     </ul>
+    <nav class="navbar navbar-light bg-light">
+     <div class="container-fluid">
+      <%= link_to 'ログイン', new_user_session_path, class: "navbar-brand" %>
+      </div>
+      </nav>
+      <nav class="navbar navbar-light bg-light">
+      <div class="container-fluid">
+      <%= link_to '新規登録', new_user_registration_path, class: "navbar-brand" %>
+      </div>
+      </nav>
     <% end %>
-  </div>
+    
