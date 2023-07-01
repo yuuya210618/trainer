@@ -1,7 +1,11 @@
 <%= render "shared/first_header" %>
 <%= render "shared/header" %>
 
+<h2>トレーニング内容を編集する</h2>
+
 <%= form_with(model: @training, local: true) do |f| %>
+
+
 
   <%= render 'shared/error_messages', model: f.object %>
 
