@@ -25,3 +25,9 @@
   text-decoration: none;
   color: white;
 }
+
+.footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+}
