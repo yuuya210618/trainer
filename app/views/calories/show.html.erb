@@ -1,19 +1,28 @@
 <%= render "shared/first_header" %>
 <%= render "shared/header" %>
 
-<h2>摂取カロリー量</h2>
+<h2>摂取カロリー</h2>
 
-<div class="show">
-<p>
-  <strong>摂取カロリー量</strong>
-  <%= @calory.calories_intake %>
-  <span>kcal</script>
-</p>
+<table class="table">
+  <thead>
+ 
+  </thead>
+  <tbody>
+    <tr>
+      <td>摂取カロリー量</td>
+      <td>  <%= @calory.calories_intake %>
+      <span>kcal</script></td>
+    </tr>
 
-<p>
-  <strong>日付</strong>
-  <%= @calory.start_time.strftime("%m-%d") %>
-</p>
+    <td>日付</td>
+    <td><%= @calory.start_time.strftime("%m-%d") %></td>
+  </tr>
+
+
+  </tbody>
+</table>
+
+
 
 <div class="d-grid gap-2">
 <%= link_to '編集', edit_calory_path(@calory), class: "btn btn-primary" %>
@@ -21,3 +30,5 @@
 <%= link_to '戻る', root_path, class: "btn btn-primary" %>
 </div>
 </div>
+
+<%= render "shared/footer" %>

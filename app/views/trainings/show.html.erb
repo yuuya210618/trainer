@@ -3,28 +3,36 @@
 
 <h2>トレーニング内容</h2>
 
-<div class="show">
-<p>
-  <strong>トレーニング内容</strong>
-  <%= @training .training_name %>
-</p>
+<table class="table">
+  <thead>
+ 
+  </thead>
+  <tbody>
+    <tr>
 
-<p>
-  <strong>重量</strong>
-  <%= @training.weight %>
-  <span>kg</script>
-</p>
+      <td>トレーニング名</td>
+      <td><%= @training .training_name %></td>
+    </tr>
+    <tr>
+ 
+      <td>重量</td>
+      <td><%= @training.weight %> <span>kg</script></td>
+    </tr>
+    <tr>
 
-<p>
-  <strong>回数</strong>
-  <%= @training.number %>
-  <span>回</script>
-</p>
+      <td>回数</td>
+      <td><%= @training.number %><span>回</span></td>
+    </tr>
 
-<p>
-  <strong>日付</strong>
-  <%= @training.start_time.strftime("%m-%d") %>
-</p>
+    <td>日付</td>
+    <td><%= @training.start_time.strftime("%m-%d") %></td>
+  </tr>
+
+
+  </tbody>
+</table>
+
+
 
 <div class="d-grid gap-2">
 <%= link_to '編集', edit_training_path(@training), class: "btn btn-primary" %>
@@ -32,3 +40,5 @@
 <%= link_to '戻る', trainings_path, class: "btn btn-primary" %>
 </div>
 </div>
+
+<%= render "shared/footer" %>
