@@ -49,12 +49,16 @@
       </script>
 
       <body>
-      <p>BMIを計算する</p>
-      <div>体重<input type="number" id="weight" value="" >kg</div> 
-      <div>身長 <input type="number" id="height" value="" >cm</div> 
-      <div><button type="button" onclick="calc()">計算する</button></div> 
+      <p>BMIを計算しよう！</p>
+      <div class="row">
+       <div class="col">
+      <div>体重<input type="number" id="weight" value="" class="form-control" >kg</div> 
+      <div>身長 <input type="number" id="height" value="" class="form-control" >cm</div> 
+      <div><button type="button" onclick="calc()" class="btn btn-primary btn-lg">計算する</button></div> 
       <div>あなたのBMIは</span><span id="bmi"></span><span>です</span>
       <p><span>判定→</span><span id="yase"><span id="himan"><span id="hyojyun"></span></p>
+       </div>
+      </div>
       </body>
     
       <div class="d-grid gap-2">
