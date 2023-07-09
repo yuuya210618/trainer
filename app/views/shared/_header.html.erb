@@ -8,13 +8,13 @@
     </nav>
     <nav class="navbar navbar-light bg-light">
     <div class="container-fluid">
-      <%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "navbar-brand" %> 
+      <%= link_to 'Logout', destroy_user_session_path, method: :delete, class: "navbar-brand" %> 
       </div>
       </nav>
     <% else %>
     <nav class="navbar navbar-light bg-light">
      <div class="container-fluid">
-      <%= link_to 'ログイン', new_user_session_path, class: "navbar-brand" %>
+      <%= link_to 'Login', new_user_session_path, class: "navbar-brand" %>
       </div>
       </nav>
       <nav class="navbar navbar-light bg-light">
