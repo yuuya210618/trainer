@@ -39,10 +39,7 @@
 ![page](https://github.com/yuuya210618/trainer/assets/128597594/4888f18c-97ad-47aa-8381-1916720ec294)
 
  # 開発環境
- ・フロントエンド
- ・バックエンド
- ・テキストエディタ
- ・テスト
+HTML/CSS/Ruby/Rails/Javascript/Github
  
  # 工夫したポイント
  トレーニング内容と摂取カロリー量の記録をそれぞれ別にカレンダー上に表示できるようにした事。
