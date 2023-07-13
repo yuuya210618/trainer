@@ -30,11 +30,10 @@
  画像、GIF、説明を記載
 
  # データベース設計
- ![design](https://github.com/yuuya210618/trainer/assets/128597594/30c94142-5c26-4205-a380-1cec80f8c9d2)
+![design](https://github.com/yuuya210618/trainer/assets/128597594/6f5bd681-4260-414b-9bcb-076cbf31ee0a)
 
  # 画面遷移図
-![page](https://github.com/yuuya210618/trainer/assets/128597594/7450369f-11cb-4a52-8945-b7d9f49afe0f)
-
+![page](https://github.com/yuuya210618/trainer/assets/128597594/4888f18c-97ad-47aa-8381-1916720ec294)
 
  # 開発環境
  ・フロントエンド
