@@ -8,6 +8,9 @@
  https://trainer-g63p.onrender.com
  
  # テスト用アカウント
+ Basic認証
+ ユーザー名：yuya
+ パスワード：9610
  メールアドレス：test@test
  パスワード：aaa111
  
