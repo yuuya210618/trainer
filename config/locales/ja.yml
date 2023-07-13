@@ -3,6 +3,11 @@ ja:
     attributes:
       user:
         nickname: ニックネーム
-      tweet:
-        text: テキスト
-        image: 画像
+        body_weight: 体重
+        height: 身長
+      training:
+        training_name: トレーニング名
+        weight: 重量
+        number: 回数
+      calory:
+        calories_intake: 摂取カロリー量
