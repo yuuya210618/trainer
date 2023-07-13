@@ -3,7 +3,7 @@ FactoryBot.define do
     training_name {'あいうえお'}
     weight {50}
     number {100}
-    start_time {2023-0-13 03:00:00}
+    start_time { Time.current }
 
     association :user
   end

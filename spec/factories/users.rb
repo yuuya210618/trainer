@@ -7,6 +7,5 @@ FactoryBot.define do
     body_weight { 50 }
     height { 170 }
 
-    association :user
   end
 end
