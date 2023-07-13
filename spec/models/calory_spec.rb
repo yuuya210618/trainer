@@ -16,17 +16,14 @@ RSpec.describe Calory, type: :model do
       it 'calories_intakeが空だと登録できない' do
         @calory.calories_intake = ''
         @calory.valid?
-        expect(@calory.errors.full_messages).to include("摂取カロリー量を入力してください")
+        expect(@calory.errors.full_messages).to include('摂取カロリー量を入力してください')
       end
 
       it 'calories_intakeは数字でないと登録できない' do
         @calory.calories_intake = 'あああ'
         @calory.valid?
-        expect(@calory.errors.full_messages).to include("摂取カロリー量は数値で入力してください")
+        expect(@calory.errors.full_messages).to include('摂取カロリー量は数値で入力してください')
       end
-
-
-     
     end
   end
 end
