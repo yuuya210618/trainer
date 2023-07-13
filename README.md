@@ -8,7 +8,7 @@
 　　https://trainer-g63p.onrender.com
  
  # テスト用アカウント
- メールアドレス：test@com
+ メールアドレス：test@test
  パスワード：aaa111
  
  # 利用方法
