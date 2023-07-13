@@ -5,10 +5,11 @@
  日々のトレーニング内容、摂取カロリーを記録し体型管理ツールとして使用できる。
  
  # URL
- 順次記述
+　　https://trainer-g63p.onrender.com
  
  # テスト用アカウント
- 順次記述
+ メールアドレス：test@com
+ パスワード：aaa111
  
  # 利用方法
  トレーニング内容投稿
@@ -26,10 +27,7 @@
  https://docs.google.com/spreadsheets/d/1wtMGO-5KYLXHLuEM36I0Bt1tMGBCrvR5XbZVvll9F_w/edit#gid=982722306
 
  # 実装した機能についての画像やGIFおよびその説明
- 順次記述
-
- # 実装予定の機能
- 未定
+ 画像、GIF、説明を記載
 
  # データベース設計
  ![design](https://github.com/yuuya210618/trainer/assets/128597594/30c94142-5c26-4205-a380-1cec80f8c9d2)
@@ -37,16 +35,14 @@
  # 画面遷移図
 ![page](https://github.com/yuuya210618/trainer/assets/128597594/7450369f-11cb-4a52-8945-b7d9f49afe0f)
 
- 
+
  # 開発環境
  ・フロントエンド
  ・バックエンド
  ・テキストエディタ
- 
- # ローカルでの動作方法
-順次記述
+ ・テスト
  
  # 工夫したポイント
- 順次記述
+ トレーニング内容と摂取カロリー量の記録をそれぞれ別にカレンダー上に表示できるようにした事。
 
 
