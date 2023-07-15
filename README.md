@@ -1,9 +1,10 @@
 # アプリケーション名　
-　trainer
+Trainer
  
  # アプリケーション概要
- 日々のトレーニング内容、摂取カロリーを記録し体型管理ツールとして使用できる。
- 
+ ログインユーザーは日々のトレーニング内容、摂取カロリーを記録しカレンダー上に表示する事ができる。
+ また、ユーザーマイページにはBMI計算機能もあり、総合的な体型管理ツールとして使用できる。
+
  # URL
  https://trainer-g63p.onrender.com
  
@@ -39,7 +40,7 @@
 ![page](https://github.com/yuuya210618/trainer/assets/128597594/4888f18c-97ad-47aa-8381-1916720ec294)
 
  # 開発環境
-HTML/CSS/Ruby/Rails/Javascript/Github
+HTML/CSS/Ruby/Ruby on Rails/Javascript/Github/Render
  
  # 工夫したポイント
  トレーニング内容と摂取カロリー量の記録をそれぞれ別にカレンダー上に表示できるようにした事。
