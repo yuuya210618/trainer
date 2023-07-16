@@ -2,7 +2,7 @@
 <%= render "shared/header" %>
 
 <div class="trainings-main">
-    <h2 class="trainings-title">トレーニング内容を記載</h2>
+    <h2 class="trainings-title">トレーニング内容を記録</h2>
     <%= form_with(model: @training, local: true) do |f| %>
 
       <%= render 'shared/error_messages', model: f.object %>
